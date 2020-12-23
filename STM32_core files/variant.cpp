@@ -70,7 +70,7 @@ const PinName digitalPin[] = {
   PA_0,   PA_1,
   PA_2,   PA_3,
   PA_4,   PA_5,
-  PE_6,   PA_7,   // D60, D61
+  PA_6,   PA_7,   // D60, D61
   PB_0,   PB_1,
   PC_0,   PC_1,
   PC_2,   PC_3,
