@@ -6,8 +6,8 @@ STM32F407 based Arduino Mega replacement for speeduino
 
 1. Install https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html
 2. Download one of the precombiled Speeduino binaries for this board, located here: https://github.com/pazi88/STM32_mega/tree/main/Speeduino%20binary%20files
-3. Run STM32 Cube Programmer. (In windows, exe is is located at: C:\Program Files (x86)\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin )
-4. Press down Boot0 button and connect usb cable to the board. Once connected, release Boot0 button. Alternately press down Boot0 and reset buttons simultaneously when usb is already connected. You should see new device "STM32 Bootloader"
+3. Press down Boot0 button and connect usb cable to the board. Once connected, release Boot0 button. Alternately press down Boot0 and reset buttons simultaneously when usb is already connected. You should see new device "STM32 Bootloader"
+4. Run STM32 Cube Programmer. (In windows, exe is is located at: C:\Program Files (x86)\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin )
 5. From right, select "USB" and click "Connect"
 6. Click "Open file" and browse the previously downloaded binary file.
 7. Click "Download"
