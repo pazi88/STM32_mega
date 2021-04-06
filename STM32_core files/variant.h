@@ -123,13 +123,11 @@ extern "C" {
 #define NUM_ANALOG_FIRST        54
 
 // On-board LED pin number
-#define LED_D2                  PE12
-//#define LED_D3                  PA7
 
-#define LED_BUILTIN             LED_D2
+#define LED_BUILTIN             PB7
 
 // Board specific button
-// #define BTN_K_UP                PA0
+// #define BTN_K_UP             PA0
 
 #endif // ARDUINO_BLACK_F407VE || ARDUINO_BLACK_F407VG
 
@@ -263,31 +261,13 @@ extern "C" {
 
 #endif // ARDUINO_BLACK_F407ZE || ARDUINO_BLACK_F407ZG
 
-#define LED_BUILTIN             LED_D2
-#define LED_GREEN               LED_D2
-
-// On-board user button
-#define BTN_K0                  PE4
-#define BTN_K1                  PE3
-#define USER_BTN                BTN_K0
-
 // Below SPI and I2C definitions already done in the core
 // Could be redefined here if differs from the default one
 // SPI Definitions
-#define PIN_SPI_SS              PB7 // NRF24 connector
-#define PIN_SPI_SS1             PB0 // W25Q16 (on board flash)
-#define PIN_SPI_MOSI            PB5 // NRF24 connector & W25Q16 (on board flash)
-#define PIN_SPI_MISO            PB4 // NRF24 connector & W25Q16 (on board flash)
-#define PIN_SPI_SCK             PB3 // NRF24 connector & W25Q16 (on board flash)
-
-// I2C Definitions
-#define PIN_WIRE_SDA            PB9
-#define PIN_WIRE_SCL            PB8
-
-// Timer Definitions
-// Use TIM6/TIM7 when possible as servo and tone don't need GPIO output pin
-#define TIMER_TONE              TIM6
-#define TIMER_SERVO             TIM7
+#define PIN_SPI_SS              PE1 // W25Q16 (on board flash)
+#define PIN_SPI_MOSI            PB5 // W25Q16 (on board flash)
+#define PIN_SPI_MISO            PB4 // W25Q16 (on board flash)
+#define PIN_SPI_SCK             PB3 // W25Q16 (on board flash)
 
 // UART Definitions
 // Define here Serial instance number to map on Serial generic name
@@ -299,7 +279,6 @@ extern "C" {
 #define PIN_SERIAL_TX           PA9
 
 /* Extra HAL modules */
-#define HAL_DAC_MODULE_ENABLED
 #define HAL_SD_MODULE_ENABLED
 
 // This indicates that there is an external and fixed 1.5k pullup
