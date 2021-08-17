@@ -15,7 +15,18 @@ This processor board has been made mainly for the BMW PnP boards that are based 
 - NO2C: Not supported
 - UA4C: Partly supported (No Fuel pump/tacho)
 ```
-## Easy way of using this board
+
+## Setting up the DIP-switches.
+
+![alt text](https://raw.githubusercontent.com/pazi88/STM32_mega/blob/main/Pics/DIP_switches.jpg)
+
+- If you wish to use the native USB on STM32, set the two USB switches to "On" and FTDI switches to "Off". No Serial0 available in this mode (bluetooth dongles don't work etc.)
+- If you wish to use the FTDU USB to Serial converter, set the two USB switches to "Off" and FTDI switches to "On". Serial0 is available on this mode (requires different binary file to work)
+- By setting PWR switch to "On" position, the speeduino board is powered by USB. This is usefull for bench testing etc. but for regular use is recommended to have this in "Off" position.
+- RST DIP switch is not used or available in some board revisions.
+
+
+## Easy way of downloading new speeduino FW to this board
 
 1. Install https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html
 2. Download one of the precombiled Speeduino binaries for this board, located here: https://github.com/pazi88/STM32_mega/tree/main/Speeduino%20binary%20files
