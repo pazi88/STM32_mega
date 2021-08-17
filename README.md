@@ -18,7 +18,7 @@ This processor board has been made mainly for the BMW PnP boards that are based 
 
 ## Setting up the DIP-switches.
 
-![alt text](https://raw.githubusercontent.com/pazi88/STM32_mega/blob/main/Pics/DIP_switches.jpg)
+![alt text](https://github.com/pazi88/STM32_mega/blob/main/Pics/DIP_switches.jpg?raw=true)
 
 - If you wish to use the native USB on STM32, set the two USB switches to "On" and FTDI switches to "Off". No Serial0 available in this mode (bluetooth dongles don't work etc.)
 - If you wish to use the FTDU USB to Serial converter, set the two USB switches to "Off" and FTDI switches to "On". Serial0 is available on this mode (requires different binary file to work)
