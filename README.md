@@ -20,13 +20,13 @@ This processor board has been made mainly for the BMW PnP boards that are based 
 
 ![alt text](https://github.com/pazi88/STM32_mega/blob/main/Pics/DIP_switches.jpg?raw=true)
 
-- If you wish to use the native USB on STM32, set the two USB switches to "On" and FTDI switches to "Off". No Serial0 available in this mode (bluetooth dongles don't work etc.)
+- If you wish to use the native USB on STM32, set the two USB switches to "On" and FTDI switches to "Off". No Serial0 available in this mode (bluetooth dongles don't work etc.) DEFAULT
 - If you wish to use the FTDU USB to Serial converter, set the two USB switches to "Off" and FTDI switches to "On". Serial0 is available on this mode (requires different binary file to work)
 - By setting PWR switch to "On" position, the speeduino board is powered by USB. This is usefull for bench testing etc. but for regular use is recommended to have this in "Off" position.
 - RST DIP switch is not used or available in some board revisions.
 
 
-## Easy way of downloading new speeduino FW to this board
+## Downloading new speeduino FW to this board
 
 1. Install https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html
 2. Download one of the precombiled Speeduino binaries for this board, located here: https://github.com/pazi88/STM32_mega/tree/main/Speeduino%20binary%20files
@@ -39,34 +39,21 @@ This processor board has been made mainly for the BMW PnP boards that are based 
 
 Alternatively you can connect ST-Link dongle to the 4-pins on the PCB labeled "ST-Link" and select "ST-LINK" in the STM32 Cube Programmer. In this way, there is no need to go to Boot0 mode.
 
-## More difficult way of using this board by compiling your own code
+## Compiling and downloading speeduino FW to this board
 
-To be able to compile and upload for this board, follow these steps:
+To be able to compile and download FW for this board, follow these steps:
 
 ### Install tool chain
-1. Install the arduino IDE
-2. Install the stm32duino core from: https://github.com/stm32duino/Arduino_Core_STM32 (version 1.9.0)
-3. Install https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html
+1. Install Visual Studio Code: https://code.visualstudio.com/download
+2. Add Platform IO to the VS Code: https://platformio.org/
 4. Replace the F407xx variant files in STM32 core with these files: https://github.com/pazi88/STM32_mega/tree/main/STM32_core%20files
 
-### Build code
-1. Download 202012 or 202103 Speeduino FW release
-2. Open the code in Arduino IDE.
-3. In arduino IDE select Tools->Board: GENERIC STM32F4 series
-4. In Arduino IDE select Tools->Board part number: "BLACK F407VE"
-5. In Arduino IDE select Tools->USART support: Enabled (generic serial)
-6. In Arduino IDE select Tools->USB support: CDC (generic serial)
-7. Open the globals.h file located in project folder
-8. Look at line 55..58 and replace line "//#define USE_SPI_EEPROM PB0" with "#define USE_SPI_EEPROM PE1" /*Use M25Qxx SPI flash */
-9. Open the init.ino file located in project folder
-10. Look at line 1320.. ish and remove the STM32 specific pin mappings for v0.4 board (otherwise the SMT32 mega will lockup)
-11. Build the speeduino project. 
+### Build and upload code
+1. Download/clone latest Speeduino FW that is set to work this board from here: https://github.com/pazi88/speeduino/tree/STM32_MEGA
+2. Open the folder with platformio.ini to Platform IO.
+3. Press down Boot0 button and connect usb cable to the board. Once connected, release Boot0 button. Alternately press down Boot0 and reset buttons simultaneously when usb is already connected. You should see new device "STM32 Bootloader"
+4. In PIO Project tasks, open "black_F407VE". Then click "Upload" and PIO should compile and upload the code to the board.
 
-### Upload
-1. Press down Boot0 button and connect usb cable to the board. Once connected, release Boot0 button. Alternately press down Boot0 and reset buttons simultaneously when usb is already connected. You should see new device "STM32 Bootloader"
-2. In Arduino IDE select Upload method: "STM32CubeProgrammer DFU" 
-3. Upload the code
-
-Alternatively you can connect ST-Link dongle to the 4-pins on the PCB labeled "ST-Link" and select Upload method"STM32CubeProgrammer SWD". In this way, there is no need to go to Boot0 mode.
+Alternatively you can connect ST-Link dongle to the 4-pins on the PCB labeled "ST-Link" and set upload_protocol to "stlink", from "dfu". In this way, there is no need to go to Boot0 mode.
 
 After these steps you should be able to connect to the board using the USB cable and use Tuner Studio. After first FW upload, you can use the "STM32 commands" menu in TS to enter Boot0.
