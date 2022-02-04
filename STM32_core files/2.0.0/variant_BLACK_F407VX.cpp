@@ -30,8 +30,8 @@ const PinName digitalPin[] = {
   PB_10,  PB_11,
   PD_4,   PD_3,
   PD_0,   PD_1,   // D20, D21
-  PC_12,  PC_8,
-  PA_15,  PC_9,
+  PC_9,   PC_8,
+  PA_15,  PC_12,
   PC_7,   PC_10,
   PC_6,   PC_11,
   PD_14,  PD_15,  // D30, D31

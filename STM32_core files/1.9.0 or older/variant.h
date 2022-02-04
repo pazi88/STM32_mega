@@ -62,14 +62,14 @@ extern "C" {
 #define PD3  19
 #define PD0  20 // CAN RX
 #define PD1  21 // CAN TX
-#define PC12 22 // SD SCK
-#define PC8  23 // SD D0
+#define PC9  22 // SD D1 (only in Rev 1.0 - 1.2)
+#define PC8  23 // SD D0 (only in Rev 1.0 - 1.2)
 #define PA15 24
-#define PC9  25 // SD D1
+#define PC12 25 // SD SCK / SPI3 MOSI for SD
 #define PC7  26
-#define PC10 27 // SD D2
+#define PC10 27 // SD D2 / SPI3 CLK for SD
 #define PC6  28
-#define PC11 29 // SD D3
+#define PC11 29 // SD D3 / SPI3 MISO for SD
 #define PD14 30
 #define PD15 31
 #define PD12 32
