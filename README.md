@@ -12,9 +12,11 @@ This processor board has been made mainly for the BMW PnP boards that are based 
 - 2001-05 MX5 PNP: Not supported
 ! 1996-97 MX5 PNP: Supported - not tested/verified
 ! 1989-95 MX5 PNP: Supported - not tested/verified
-- NO2C: Not supported
-- UA4C: Partly supported (No Fuel pump/tacho)
+! NO2C: Supported in rev.1.3 - not tested/verified
+! UA4C: Supported in rev.1.3 - not tested/verified
 ```
+
+EasyEda project link: https://easyeda.com/pazi88/Arduino_Mega_2560-z92kCUO6o_copy_copy
 
 ## Setting up the DIP-switches.
 
