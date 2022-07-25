@@ -15,81 +15,81 @@
 /*----------------------------------------------------------------------------
  *        STM32 pins number
  *----------------------------------------------------------------------------*/
-#define PA10 0
-#define PA9  1
-#define PD7  2
-#define PB6  3
-#define PD11 4
-#define PD10 5
-#define PD9  6
-#define PD8  7
-#define PB15 8
-#define PB14 9
-#define PB12 10
-#define PB13 11
-#define PA8  12
-#define PD2  13 // SD CMD
-#define PD5  14
-#define PD6  15
-#define PB10 16
-#define PB11 17
-#define PD4  18
-#define PD3  19
-#define PD0  20 // CAN RX
-#define PD1  21 // CAN TX
-#define PC9  22 // SD D1 (only in Rev 1.0 - 1.2)
-#define PC8  23 // SD D0 (only in Rev 1.0 - 1.2)
-#define PA15 24
-#define PC12 25 // SD SCK / SPI3 MOSI for SD
-#define PC7  26
-#define PC10 27 // SD D2 / SPI3 CLK for SD
-#define PC6  28
-#define PC11 29 // SD D3 / SPI3 MISO for SD
-#define PD14 30
-#define PD15 31
-#define PD12 32
-#define PD13 33
-#define PE5  34
-#define PE15 35
-#define PE4  36
-#define PE14 37
-#define PE3  38
-#define PE13 39
-#define PE2  40
-#define PE12 41
-#define PE10 42
-#define PB7  43
-#define PB3  44 // SPI1 CLK
-#define PE11 45
-#define PE0  46
-#define PE9  47
-#define PE6  48
-#define PE8  49
-#define PE7  50
-#define PB8  51
-#define PC13 52
-#define PB9  53
-#define PA0  PIN_A0
-#define PA1  PIN_A1
-#define PA2  PIN_A2
-#define PA3  PIN_A3
-#define PA4  PIN_A4
-#define PA5  PIN_A5
-#define PA6  PIN_A6
-#define PA7  PIN_A7
-#define PB0  PIN_A8
-#define PB1  PIN_A9
-#define PC0  PIN_A10
-#define PC1  PIN_A11
-#define PC2  PIN_A12
-#define PC3  PIN_A13
-#define PC4  PIN_A14
-#define PC5  PIN_A15
-#define PA11 70 // USB_DP
-#define PA12 71 // USB_DM
-#define PE1  72 // SPI-Flash CS
-#define PB4  73 // SPI1 MOSI
-#define PB5  74 // SPI1 MISO
+#define PA10                     0
+#define PA9                      1
+#define PD7                      2
+#define PB6                      3
+#define PD11                     4
+#define PD10                     5
+#define PD9                      6
+#define PD8                      7
+#define PB15                     8
+#define PB14                     9
+#define PB12                     10
+#define PB13                     11
+#define PA8                      12
+#define PD2                      13 // SD CMD
+#define PD5                      14
+#define PD6                      15
+#define PC12                     16
+#define PC11                     17
+#define PC10                     18
+#define PD3                      19
+#define PD0                      20 // CAN RX
+#define PD1                      21 // CAN TX
+#define PC9                      22 // SD D1 (only in Rev 1.0 - 1.2)
+#define PC8                      23 // SD D0 (only in Rev 1.0 - 1.2)
+#define PA15                     24
+#define PB10                     25 // SD SCK / SPI3 MOSI for SD
+#define PC7                      26
+#define PB11                     27 // SD D2 / SPI3 CLK for SD
+#define PC6                      28
+#define PD4                      29 // SD D3 / SPI3 MISO for SD
+#define PD14                     30
+#define PD15                     31
+#define PD12                     32
+#define PD13                     33
+#define PE5                      34
+#define PE15                     35
+#define PE4                      36
+#define PE14                     37
+#define PE3                      38
+#define PE13                     39
+#define PE2                      40
+#define PE12                     41
+#define PE10                     42
+#define PB7                      43
+#define PB3                      44 // SPI1 CLK
+#define PE11                     45
+#define PE0                      46
+#define PE9                      47
+#define PE6                      48
+#define PE8                      49
+#define PE7                      50
+#define PB8                      51
+#define PC13                     52
+#define PB9                      53
+#define PA0                      PIN_A0
+#define PA1                      PIN_A1
+#define PA2                      PIN_A2
+#define PA3                      PIN_A3
+#define PA4                      PIN_A4
+#define PA5                      PIN_A5
+#define PA6                      PIN_A6
+#define PA7                      PIN_A7
+#define PB0                      PIN_A8
+#define PB1                      PIN_A9
+#define PC0                      PIN_A10
+#define PC1                      PIN_A11
+#define PC2                      PIN_A12
+#define PC3                      PIN_A13
+#define PC4                      PIN_A14
+#define PC5                      PIN_A15
+#define PA11                     70 // USB_DP
+#define PA12                     71 // USB_DM
+#define PE1                      72 // SPI-Flash CS
+#define PB4                      73 // SPI1 MOSI
+#define PB5                      74 // SPI1 MISO
 
 // Alternate pins number
 #define PA0_ALT1                (PA0  | ALT1)
@@ -142,11 +142,9 @@
 
 // On-board LED pin number
 
-#define LED_BUILTIN             PB7
-
-// Board specific button
-//#define BTN_K_UP                PA0
-
+#ifndef LED_BUILTIN
+  #define LED_BUILTIN           PB7
+#endif
 
 // Below SPI and I2C definitions already done in the core
 // Could be redefined here if differs from the default one
@@ -158,13 +156,13 @@
   #define PIN_SPI_SS1           PE1 // W25Q16 (on board flash)
 #endif
 #ifndef PIN_SPI_MOSI
-  #define PIN_SPI_MOSI          PB5 // NRF24 connector & W25Q16 (on board flash)
+  #define PIN_SPI_MOSI          PB5 // W25Q16 (on board flash)
 #endif
 #ifndef PIN_SPI_MISO
-  #define PIN_SPI_MISO          PB4 // NRF24 connector & W25Q16 (on board flash)
+  #define PIN_SPI_MISO          PB4 // W25Q16 (on board flash)
 #endif
 #ifndef PIN_SPI_SCK
-  #define PIN_SPI_SCK           PB3 // NRF24 connector & W25Q16 (on board flash)
+  #define PIN_SPI_SCK           PB3 // W25Q16 (on board flash)
 #endif
 
 // I2C Definitions
