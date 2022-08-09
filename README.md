@@ -27,6 +27,10 @@ EasyEda project link: https://easyeda.com/pazi88/Arduino_Mega_2560-z92kCUO6o_cop
 - By setting PWR switch to "On" position, the speeduino board is powered by USB. This is usefull for bench testing etc. but for regular use is recommended to have this in "Off" position.
 - RST DIP switch is not used or available in some board revisions.
 
+## Drivers.
+
+For FTDI and Native USB mode the Windows should install the drivers automatically. In Windows 7 there has been problems with drivers not installing automatically when using native USB.
+STM32 VCP Win7 (and 8) drivers available here: https://www.st.com/en/development-tools/stsw-stm32102.html
 
 ## Downloading new speeduino FW to this board
 
