@@ -15,8 +15,8 @@
 /*----------------------------------------------------------------------------
  *        STM32 pins number
  *----------------------------------------------------------------------------*/
-#define PA10                     0
-#define PA9                      1
+#define PC9                      0
+#define PC8                      1
 #define PD7                      2
 #define PB6                      3
 #define PD11                     4
@@ -37,8 +37,8 @@
 #define PD3                      19
 #define PD0                      20 // CAN RX
 #define PD1                      21 // CAN TX
-#define PC9                      22 // SD D1 (only in Rev 1.0 - 1.2)
-#define PC8                      23 // SD D0 (only in Rev 1.0 - 1.2)
+#define PA10                     22
+#define PA9                      23
 #define PA15                     24
 #define PB10                     25 // SD SCK / SPI3 MOSI for SD
 #define PC7                      26

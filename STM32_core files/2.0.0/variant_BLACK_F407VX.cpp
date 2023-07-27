@@ -18,7 +18,7 @@
 // This array allows to wrap Arduino pin number(Dx or x)
 // to STM32 PinName (PX_n)
 const PinName digitalPin[] = {
-  PA_10,  PA_9,   // D0, D1
+  PC_9,   PC_8,   // D0, D1
   PD_7,   PB_6,
   PD_11,  PD_10,
   PD_9,   PD_8,
@@ -29,7 +29,7 @@ const PinName digitalPin[] = {
   PC_12,  PC_11,
   PC_10,  PD_3,
   PD_0,   PD_1,   // D20, D21
-  PC_9,   PC_8,
+  PA_10,  PA_9,
   PA_15,  PB_10,
   PC_7,   PB_11,
   PC_6,   PD_4,
