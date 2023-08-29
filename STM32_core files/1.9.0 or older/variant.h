@@ -40,8 +40,8 @@ extern "C" {
  *----------------------------------------------------------------------------*/
 #if defined(ARDUINO_BLACK_F407VE) || defined(ARDUINO_BLACK_F407VG)
 
-#define PA10 0
-#define PA9  1
+#define PC9  0
+#define PC8  1
 #define PD7  2
 #define PB6  3
 #define PD11 4
@@ -53,23 +53,23 @@ extern "C" {
 #define PB12 10
 #define PB13 11
 #define PA8  12
-#define PD2  13 // SD CMD
+#define PD2  13 // SD CS
 #define PD5  14
 #define PD6  15
-#define PB10 16
-#define PB11 17
+#define PC12 16 // SPI3 MOSI for SD
+#define PC11 17 // SPI3 MISO for SD
 #define PD4  18
 #define PD3  19
 #define PD0  20 // CAN RX
 #define PD1  21 // CAN TX
-#define PC9  22 // SD D1 (only in Rev 1.0 - 1.2)
-#define PC8  23 // SD D0 (only in Rev 1.0 - 1.2)
+#define PA10 22
+#define PA9  23
 #define PA15 24
-#define PC12 25 // SD SCK / SPI3 MOSI for SD
+#define PB10 25
 #define PC7  26
-#define PC10 27 // SD D2 / SPI3 CLK for SD
+#define PB11 27
 #define PC6  28
-#define PC11 29 // SD D3 / SPI3 MISO for SD
+#define PC10 29 // SPI3 CLK for SD
 #define PD14 30
 #define PD15 31
 #define PD12 32
