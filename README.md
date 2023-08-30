@@ -18,6 +18,10 @@ This processor board has been made mainly for the BMW PnP boards that are based 
 
 EasyEda project link: https://easyeda.com/pazi88/Arduino_Mega_2560-z92kCUO6o_copy_copy
 
+## Ordering boards.
+
+These boards can be get made from different PCB manufacturers like: https://www.pcbway.com/ It's recommended to use the latest 1.3 board design when getting new boards done. The "Rev 1.3" -folder has all the needed files for board manufacturing (gerber files) and also to get the components assembled (BOM and PickAndPlace files).
+
 ## Setting up the DIP-switches.
 
 ![alt text](https://github.com/pazi88/STM32_mega/blob/main/Pics/DIP_switches.jpg?raw=true)
