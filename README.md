@@ -36,6 +36,10 @@ These boards can be get made from different PCB manufacturers like: https://www.
 For FTDI and Native USB mode the Windows should install the drivers automatically. In Windows 7 there has been problems with drivers not installing automatically when using native USB.
 STM32 VCP Win7 (and 8) drivers available here: https://www.st.com/en/development-tools/stsw-stm32102.html
 
+## RTC battery.
+
+RTC battery holder can accept CR1225, CR1220 or CR1216 coin cell battery.
+
 ## Downloading new speeduino FW to this board
 
 1. Install https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html
