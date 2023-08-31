@@ -7,13 +7,13 @@ STM32F407 based Arduino Mega replacement for speeduino
 This processor board has been made mainly for the BMW PnP boards that are based on speeduino V0.4 design. Not all arduino Mega pins are connected so support other speeduino boards varies.
  ```diff 
 ! Official V0.3: Supported - not tested/verified
-! Official V0.4: Supported - not tested/verified
++ Official V0.4: Supported - tested/verified
 + BMW PnP boards: Supported - tested/verified
 - 2001-05 MX5 PNP: Not supported
 ! 1996-97 MX5 PNP: Supported - not tested/verified
 ! 1989-95 MX5 PNP: Supported - not tested/verified
 ! NO2C: Supported in rev.1.3 - not tested/verified
-! UA4C: Supported in rev.1.3 - not tested/verified
++ UA4C: Supported in rev.1.3 - tested/verified (CAN-bus connector and SD-card slot have some fitment issues)
 ```
 
 EasyEda project link: https://easyeda.com/pazi88/Arduino_Mega_2560-z92kCUO6o_copy_copy
