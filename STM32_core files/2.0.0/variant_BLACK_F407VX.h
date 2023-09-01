@@ -31,8 +31,8 @@
 #define PD2                      13 // SD CS
 #define PD5                      14
 #define PD6                      15
-#define PC12                     16 // SPI3 MOSI for SD
-#define PC11                     17 // SPI3 MISO for SD
+#define PB10                     16
+#define PB11                     17
 #define PD4                      18
 #define PD3                      19
 #define PD0                      20 // CAN RX
@@ -40,9 +40,9 @@
 #define PA10                     22
 #define PA9                      23
 #define PA15                     24
-#define PB10                     25
+#define PC12                     25 // SPI3 MOSI for SD
 #define PC7                      26
-#define PB11                     27
+#define PC11                     27 // SPI3 MISO for SD
 #define PC6                      28
 #define PC10                     29 // SPI3 CLK for SD
 #define PD14                     30
