@@ -2,6 +2,8 @@
 STM32F407 based Arduino Mega replacement for speeduino
 ![alt text](https://pazi88.kuvat.fi/kuvat/Projektikuvat/Random%20projektit/speeduino/20201201_085147.jpg?img=smaller)
 
+Video about this board: https://youtu.be/yljtZp3HeZI?si=Ho1e6ncrtZDHI8-f
+
 ## Speeduino board support.
 
 This processor board has been made mainly for the BMW PnP boards that are based on speeduino V0.4 design. Not all arduino Mega pins are connected so support other speeduino boards varies.
