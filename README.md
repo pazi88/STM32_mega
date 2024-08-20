@@ -44,16 +44,16 @@ RTC battery holder can accept CR1225, CR1220 or CR1216 coin cell battery.
 
 ## Downloading new speeduino FW to this board
 
-1. Install https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stm32cubeprog.html
+1. Download Speedyloader (1.6.0 or later): https://speeduino.com/home/support/downloads
 2. Download one of the precombiled Speeduino binaries for this board, located here: https://github.com/pazi88/STM32_mega/tree/main/Speeduino%20binary%20files
 3. Press down Boot0 button and connect usb cable to the board. Once connected, release Boot0 button. Alternately press down Boot0 and reset buttons simultaneously when usb is already connected. You should see new device "STM32 Bootloader"
-4. Run STM32 Cube Programmer. (In windows, exe is is located at: C:\Program Files (x86)\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin )
-5. From right, select "USB" and click "Connect"
-6. Click "Open file" and browse the previously downloaded binary file.
-7. Click "Download"
-8. Now you should be able to connect to the board using the USB cable and use Tuner Studio. After first FW upload, you can use the "STM32 commands" menu in TS to enter Boot0.
-
-Alternatively you can connect ST-Link dongle to the 4-pins on the PCB labeled "ST-Link" and select "ST-LINK" in the STM32 Cube Programmer. In this way, there is no need to go to Boot0 mode.
+4. Run the SpeedyLoader
+5. From down and right, select "Use Local Firmware"
+![alt text](https://github.com/pazi88/STM32_mega/blob/main/Pics/Speedyloader1.png?raw=true)
+6. Select one of the previously downloaded binary files.
+7. Select "STM32F407 in DFU mode" from the list.
+![alt text](https://github.com/pazi88/STM32_mega/blob/main/Pics/Speedyloader2.png?raw=true)
+8. Click "Upload"
 
 ## Compiling and downloading speeduino FW to this board
 
