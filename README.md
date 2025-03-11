@@ -22,7 +22,8 @@ EasyEda project link: https://easyeda.com/pazi88/Arduino_Mega_2560-z92kCUO6o_cop
 
 ## Ordering boards.
 
-Easiest way to get these boards is to order from PCBWay using this link: https://www.pcbway.com/project/shareproject/STM32_F407_Processor_Board_for_Speeduino_4fc7d500.html 
+Easiest way to get these boards is to order from PCBWay using this link: https://www.pcbway.com/project/shareproject/STM32_F407_Processor_Board_for_Speeduino_4fc7d500.html
+Or from PnPduino using this link: https://pnpduino.com/product/stm32-mega-by-pazi88/
 But the any other PCB wendor can be used. It's recommended to use the latest 1.3B board design when getting new boards done.
 The "Rev 1.3B" -folder has all the needed files for board manufacturing (gerber files) and also to get the components assembled (BOM and PickAndPlace files).
 
