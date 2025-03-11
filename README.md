@@ -22,7 +22,9 @@ EasyEda project link: https://easyeda.com/pazi88/Arduino_Mega_2560-z92kCUO6o_cop
 
 ## Ordering boards.
 
-These boards can be get made from different PCB manufacturers like: https://www.pcbway.com/ It's recommended to use the latest 1.3 board design when getting new boards done. The "Rev 1.3" -folder has all the needed files for board manufacturing (gerber files) and also to get the components assembled (BOM and PickAndPlace files).
+Easiest way to get these boards is to order from PCBWay using this link: https://www.pcbway.com/project/shareproject/STM32_F407_Processor_Board_for_Speeduino_4fc7d500.html 
+But the any other PCB wendor can be used. It's recommended to use the latest 1.3B board design when getting new boards done.
+The "Rev 1.3B" -folder has all the needed files for board manufacturing (gerber files) and also to get the components assembled (BOM and PickAndPlace files).
 
 ## Setting up the DIP-switches.
 
